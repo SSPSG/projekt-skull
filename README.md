@@ -1,7 +1,7 @@
 ## 💀 blog
 blog 💀
 
-## 📝 Description
+## 💀 Description
 basic blog generator based on pocketbase
 
 ## 💀 Build
