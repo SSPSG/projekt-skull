@@ -1,5 +1,7 @@
 <script>
-    import Check from '$lib/check.svelte';
+    import Editor from '$lib/editor.svelte';
 </script>
 
-<Check name="Svelte" />
+
+<Editor/>
+<a href="blogpost">to blog</a>
