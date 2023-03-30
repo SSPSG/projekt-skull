@@ -4,4 +4,4 @@
 
 
 <Editor/>
-<a href="blogpost">to blogd</a>
+<a href="blogpost">to blog</a>
