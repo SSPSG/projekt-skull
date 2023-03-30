@@ -5,6 +5,7 @@ blog 💀
 basic blog generator based on pocketbase
 
 ## 💀 Build
+(we are using pnpm)
 ```bash
 $ git clone https://github.com/Smichovska-SPS/projekt-skull
 $ cd projekt-skull
