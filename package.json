@@ -26,6 +26,9 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@tiptap/core": "^2.0.1",
+		"@tiptap/pm": "^2.0.1",
+		"@tiptap/starter-kit": "^2.0.1",
 		"pocketbase": "^0.13.1"
 	}
 }
