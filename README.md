@@ -14,20 +14,27 @@ $ npm run build
 ```
 
 ## 💀 Deploy
-deploy with pocketbase (currently trough fly.io)
-(also not working 💀)
+(deployment is not fully tought out 💀)
+### Pocketbase
+(currently trough fly.io)
 ```bash
 $ flyctl launch
 ```
+### Frotend
+```bash
+$ npm run build
+$ node -r dotenv/config build
+```
+
 
 ## 💀 connecting to pocketbase
-### development
+### during development
 connect to remote pocketbase instance and develop locally with
 ```bash
 $ npm run dev
 ```
 
-### deployment
+### during deployment
 connect to pocketbase on localhost and deploy on the same server with node (pocketbase should not be exposed to the internet)
 
 
