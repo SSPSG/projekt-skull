@@ -1,4 +1,4 @@
-# fly.toml file generated for pocketbase-skullblog on 2023-03-30T22:39:38+02:00
+# fly.toml file generated for project-skull on 2023-03-31T15:15:02+02:00
 
 app = "pocketbase-skullblog"
 kill_signal = "SIGINT"
@@ -6,9 +6,6 @@ kill_timeout = 5
 mounts = []
 primary_region = "waw"
 processes = []
-
-[build]
-  dockerfile = "Dockerfile"
 
 [[services]]
   internal_port = 8080
