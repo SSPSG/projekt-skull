@@ -41,6 +41,7 @@ connect to pocketbase on localhost and deploy on the same server with node (pock
 ## 💀 TODO
 - [ ] create editor
 - [ ] actuall design
-- [ ] login with pocketbase
+- [x] login with pocketbase
+  - [ ] regex email verification
 - [ ] if everything works, integrate with HUGO
 - [ ] fix deployment (low priority)
