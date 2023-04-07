@@ -34,6 +34,20 @@ form {
     input:not(:first-child) {
         margin-top: 34px;
     }
+    input.invalid {
+        border-color: red;
+    }
+
+    input + p {
+        display: none;
+        color: red;
+    }
+    input.valid + p {
+        display: none;
+    }
+    input.invalid + p {
+        display: block;
+    }
 
     a {
         margin-left: 40%;
@@ -85,6 +99,10 @@ form {
         position: relative;
         top: 30px;
         font-size: 18px;
+    }
+
+    .error-text {
+        color: red;
     }
 }
 
