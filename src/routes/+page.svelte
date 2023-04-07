@@ -1,7 +1,3 @@
-<script>
-    import Editor from '$lib/editor.svelte';
-</script>
-
-
-<Editor/>
-<a href="blogpost">to blog</a>
+<h1>Welcome to 💀blog</h1>
+<a href="login">login</a><br>
+<a href="register">register</a>
