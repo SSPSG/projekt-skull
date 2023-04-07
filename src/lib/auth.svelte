@@ -1,5 +1,4 @@
 <script lang="ts">
-    
 	/*
 	 * Junk code!
 	 */
@@ -161,7 +160,7 @@
 				<a href="#top">Forgor💀 password?</a>
 				<button type="submit"><p>Sign in</p></button>
 			</form>
-			<p class="no-account">Don't have an account? <a href="#top">Sign Up</a>!</p>
+			<p class="no-account">Don't have an account? <a href="register">Sign Up</a>!</p>
 		</div>
 	</div>
 {/if}
