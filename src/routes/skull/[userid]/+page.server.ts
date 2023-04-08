@@ -5,8 +5,8 @@ export async function load({ params }){
     const blogList = await pb.collection('blogposts').getFullList({
         filter: "author = '"+ params.userid + "'"
     });
-    
-    let user = await pb.collection('users').getOne('i8vwl9znjnbxor4');
+
+    let user = await pb.collection('users').getOne(params.userid);
     if (!user) throw error(404, 'User does not exist');
 
     let blogs = blogList.map((blog) => {
