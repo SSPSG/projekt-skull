@@ -12,7 +12,7 @@ export async function load({ params }){
     let blogs = blogList.map((blog) => {
         return {
             name: blog.name,
-            content: blog.blogpost.split('\n')[0],
+            content: blog.blogpost.split('</p>')[0],
             author: blog.author
         }
     })
