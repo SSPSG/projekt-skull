@@ -7,6 +7,6 @@ export const regEx: any = {
     password: /^([\w\-\+\.]{8,64})$/,
 };
 
-export function validate(field: HTMLInputElement, reg: RegExp) {
-    return reg.test(field.value);
+export function validate(field: string, reg: RegExp) {
+    return reg.test(field);
 }
