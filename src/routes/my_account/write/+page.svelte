@@ -33,5 +33,5 @@
 	<Editors bind:editor bind:title />
 	<button on:click={saveBlog}> save </button>
 {:else}
-	<div>go <a href="login">login</a></div>
+	<div>go <a href="/login">login</a></div>
 {/if}
