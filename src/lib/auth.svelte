@@ -30,16 +30,16 @@
 	function checkForInvalidInput() {
 		const inputs: HTMLInputElement[] = [usernameInput, emailInput, passwordInput];
 		for (let i = 0; i < inputs.length; i++) {
-			let currentInput: HTMLInputElement = inputs[i];
+			let currentInput: string = inputs[i].value;
 			if (currentInput == undefined) continue;
-			let inputName: string = currentInput.name;
+			let inputName: string = inputs[i].name;
 			if (!validate(currentInput, regEx[inputName])) return false;
 		}
 		return true;
 	}
 
 	function onValidate(input: HTMLInputElement, regEx: RegExp) {
-		if (!validate(input, regEx)) {
+		if (!validate(input.value, regEx)) {
 			input.classList.add('invalid');
 			input.classList.remove('valid');
 		}
@@ -100,7 +100,7 @@
 				{/if}
 				<input
 					type="text"
-					name="password"
+					name="username"
 					placeholder="username"
 					required
 					on:keyup={() => onValidate(usernameInput, regEx.username)}
