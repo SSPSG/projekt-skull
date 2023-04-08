@@ -30,8 +30,8 @@
 	function checkForInvalidInput() {
 		const inputs: HTMLInputElement[] = [usernameInput, emailInput, passwordInput];
 		for (let i = 0; i < inputs.length; i++) {
+			if (inputs[i] == undefined) continue;
 			let currentInput: string = inputs[i].value;
-			if (currentInput == undefined) continue;
 			let inputName: string = inputs[i].name;
 			if (!validate(currentInput, regEx[inputName])) return false;
 		}
