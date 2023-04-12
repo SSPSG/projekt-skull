@@ -60,7 +60,7 @@
 			if (!checkForInvalidInput()) return;
 			await pb.collection('users').authWithPassword(emailInput.value, passwordInput.value);
 		} catch (error) {
-			authentificationError('Invalid username or password!', true);
+			authentificationError('Invalid email or password!', true);
 		}
 	}
 
