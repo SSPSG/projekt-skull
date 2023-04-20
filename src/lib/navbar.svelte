@@ -1,3 +1,7 @@
+<script>
+	import { currentUser } from '$lib/pocketbase';
+</script>
+
 <header>
 	<a href="/" class="logo">
 		<img src="/skull.png" alt="💀" />
@@ -5,11 +9,15 @@
 	</a>
 	<nav>
 		<ul class="links">
-			<li><a href="/skullheads">skullheads</a></li>
+			<li><a href="/skull">skullheads</a></li>
 			<li><a href="/popular">popular</a></li>
 			<li><a href="/about">about us</a></li>
 		</ul>
-		<a href="/login" class="login-btn">Login</a>
+		{#if !$currentUser}
+			<a href="/login" class="login-btn">Login</a>
+		{:else}
+			<a href="/my_account/write" class="login-btn">My Account</a>
+		{/if}
 	</nav>
 </header>
 
